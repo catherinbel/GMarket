@@ -24,7 +24,7 @@ public class Main {
 
         //выводим на экран сумму всех товаров в рублях, по текущему курсу
         try {
-            System.out.println("Цена всех товаров в рублях: " + String.format("%.2f", c.calculateCosts(productList, Currency.currency.USD, date)));
+            System.out.println("Total price: " + String.format("%.2f", c.calculateCosts(productList, Currency.currency.USD, date)));
         } catch (IOException e) {
             System.out.println("Сегодня не день Бэкхэма");
             e.printStackTrace();
